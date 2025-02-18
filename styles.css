@@ -1,14 +1,14 @@
 body {
     font-family: 'Georgia', serif;
     margin: 0;
-    padding: 0;
+    padding: 0  ;
     background: #fdf2f8;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
   }
   
   .reveal-container {
@@ -35,9 +35,10 @@ body {
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 80vw;
     max-width: 600px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .header h1 {
