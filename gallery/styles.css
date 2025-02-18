@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: url(http://martijndevalk.nl/img/bg-tile.jpg) repeat;
+  }
+  
+  .polaroids {
+    padding: 40px 20px;
+  }
+  
+  .polaroids ul li {
+    margin: 0 10px 10px;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .polaroids ul li .pin {
+    margin-left: -16px;
+    background-image: url(http://martijndevalk.nl/img/pin.png);
+    width: 34px;
+    height: 42px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    z-index: 6;
+  }
+  
+  .polaroids ul a {
+    padding: 10px 10px 15px;
+    background-color: #fff;
+    float: left;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #686b70;
+    font-size: 18px;
+    position: relative;
+    transform-origin: top center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .polaroids ul li a.shake {
+    -webkit-animation-duration: 4500ms;
+    animation-duration: 4500ms;
+    -webkit-animation-name: pola;
+    animation-name: pola;
+    -webkit-transition-timing-function: cubic-bezier(0.655, 0, 0.005, 1);
+    transition-timing-function: cubic-bezier(0.655, 0, 0.005, 1);
+  }
+  
+  .polaroids ul a:after {
+    content: attr(title);
+  }
+  
+  .polaroids ul img {
+    display: block;
+    width: 262px;
+    margin-bottom: 12px;
+  }
+  
+  @keyframes pola {
+    from {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(3deg);
+    }
+    20% {
+      transform: rotate(-3deg);
+    }
+    30% {
+      transform: rotate(2deg);
+    }
+    40% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+    60% {
+      transform: rotate(-1deg);
+    }
+    70% {
+      transform: rotate(0.5deg);
+    }
+    80% {
+      transform: rotate(-0.5deg);
+    }
+    90% {
+      transform: rotate(0.2deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
